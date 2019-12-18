@@ -1,0 +1,72 @@
+{
+  "name": "cdk-secrets",
+  "description": "CDK Construct for secrets",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Schroeder",
+    "url": "https://www.udondan.com/"
+  },
+  "homepage": "https://github.com/udondan/cdk-secrets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udondan/cdk-secrets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/udondan/cdk-secrets/issues"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "construct",
+    "secrets"
+  ],
+  "stability": "experimental",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "build:watch": "jsii -w",
+    "package": "jsii-pacmak"
+  },
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "acme.hello-jsii",
+        "module": "acme.hello_jsii"
+      },
+      "java": {
+        "package": "com.acme.hello",
+        "maven": {
+          "groupId": "com.acme.hello",
+          "artifactId": "hello-jsii"
+        }
+      },
+      "dotnet": {
+        "namespace": "Acme.HelloNamespace",
+        "packageId": "Acme.HelloPackage"
+      }
+    }
+  },
+  "devDependencies": {
+    "jsii": "^0.20.11",
+    "jsii-pacmak": "^0.20.11"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudformation": "^1.19.0",
+    "@aws-cdk/aws-iam": "^1.19.0",
+    "@aws-cdk/aws-kms": "^1.19.0",
+    "@aws-cdk/aws-lambda": "^1.19.0",
+    "@aws-cdk/aws-s3": "^1.19.0",
+    "@aws-cdk/core": "^1.19.0"
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-iam": "^1.19.0",
+    "@aws-cdk/aws-kms": "^1.19.0",
+    "@aws-cdk/aws-lambda": "^1.19.0",
+    "@aws-cdk/aws-s3": "^1.19.0",
+    "@aws-cdk/core": "^1.19.0",
+    "@aws-cdk/aws-cloudformation": "^1.19.0"
+  }
+}

@@ -1,0 +1,2457 @@
+{
+  "author": {
+    "name": "Daniel Schroeder",
+    "roles": [
+      "author"
+    ],
+    "url": "https://www.udondan.com/"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudformation": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudFormation",
+          "packageId": "Amazon.CDK.AWS.CloudFormation",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudformation",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudformation"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudformation"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudformation",
+          "module": "aws_cdk.aws_cloudformation"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-iam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.IAM",
+          "packageId": "Amazon.CDK.AWS.IAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "iam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.iam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-iam"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-iam",
+          "module": "aws_cdk.aws_iam"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-kms": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.KMS",
+          "packageId": "Amazon.CDK.AWS.KMS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "kms",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.kms"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-kms"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-kms",
+          "module": "aws_cdk.aws_kms"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-lambda": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Lambda",
+          "packageId": "Amazon.CDK.AWS.Lambda",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "lambda",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.lambda"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-lambda"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-lambda",
+          "module": "aws_cdk.aws_lambda"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-s3": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3",
+          "packageId": "Amazon.CDK.AWS.S3",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3",
+          "module": "aws_cdk.aws_s3"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/core": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK",
+          "packageId": "Amazon.CDK",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "core",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.core"
+        },
+        "js": {
+          "npm": "@aws-cdk/core"
+        },
+        "python": {
+          "distName": "aws-cdk.core",
+          "module": "aws_cdk.core"
+        }
+      },
+      "version": "1.19.0"
+    }
+  },
+  "dependencyClosure": {
+    "@aws-cdk/aws-cloudformation": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudFormation",
+          "packageId": "Amazon.CDK.AWS.CloudFormation",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudformation",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudformation"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudformation"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudformation",
+          "module": "aws_cdk.aws_cloudformation"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-cloudwatch": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudWatch",
+          "packageId": "Amazon.CDK.AWS.CloudWatch",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudwatch",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudwatch"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudwatch"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudwatch",
+          "module": "aws_cdk.aws_cloudwatch"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-ec2": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.EC2",
+          "packageId": "Amazon.CDK.AWS.EC2",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ec2",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ec2"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ec2"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ec2",
+          "module": "aws_cdk.aws_ec2"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-events": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Events",
+          "packageId": "Amazon.CDK.AWS.Events",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "events",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.events"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-events"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-events",
+          "module": "aws_cdk.aws_events"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-iam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.IAM",
+          "packageId": "Amazon.CDK.AWS.IAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "iam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.iam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-iam"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-iam",
+          "module": "aws_cdk.aws_iam"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-kms": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.KMS",
+          "packageId": "Amazon.CDK.AWS.KMS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "kms",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.kms"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-kms"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-kms",
+          "module": "aws_cdk.aws_kms"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-lambda": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Lambda",
+          "packageId": "Amazon.CDK.AWS.Lambda",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "lambda",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.lambda"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-lambda"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-lambda",
+          "module": "aws_cdk.aws_lambda"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-logs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Logs",
+          "packageId": "Amazon.CDK.AWS.Logs",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "logs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.logs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-logs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-logs",
+          "module": "aws_cdk.aws_logs"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-s3": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3",
+          "packageId": "Amazon.CDK.AWS.S3",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3",
+          "module": "aws_cdk.aws_s3"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-s3-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3.Assets",
+          "packageId": "Amazon.CDK.AWS.S3.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3-assets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3-assets",
+          "module": "aws_cdk.aws_s3_assets"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-sns": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SNS",
+          "packageId": "Amazon.CDK.AWS.SNS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sns"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sns",
+          "module": "aws_cdk.aws_sns"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/aws-sqs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SQS",
+          "packageId": "Amazon.CDK.AWS.SQS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sqs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sqs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sqs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sqs",
+          "module": "aws_cdk.aws_sqs"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/core": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK",
+          "packageId": "Amazon.CDK",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "core",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.core"
+        },
+        "js": {
+          "npm": "@aws-cdk/core"
+        },
+        "python": {
+          "distName": "aws-cdk.core",
+          "module": "aws_cdk.core"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/cx-api": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CXAPI",
+          "packageId": "Amazon.CDK.CXAPI",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-cx-api",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cxapi"
+        },
+        "js": {
+          "npm": "@aws-cdk/cx-api"
+        },
+        "python": {
+          "distName": "aws-cdk.cx-api",
+          "module": "aws_cdk.cx_api"
+        }
+      },
+      "version": "1.19.0"
+    },
+    "@aws-cdk/region-info": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.RegionInfo",
+          "packageId": "Amazon.CDK.RegionInfo",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-region-info",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.regioninfo"
+        },
+        "js": {
+          "npm": "@aws-cdk/region-info"
+        },
+        "python": {
+          "distName": "aws-cdk.region-info",
+          "module": "aws_cdk.region_info"
+        }
+      },
+      "version": "1.19.0"
+    }
+  },
+  "description": "CDK Construct for secrets",
+  "docs": {
+    "stability": "experimental"
+  },
+  "homepage": "https://github.com/udondan/cdk-secrets",
+  "jsiiVersion": "0.20.11 (build d4fd44f)",
+  "keywords": [
+    "aws",
+    "cdk",
+    "constructs",
+    "secrets"
+  ],
+  "license": "MIT",
+  "name": "cdk-secrets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udondan/cdk-secrets.git"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "dotnet": {
+      "namespace": "Acme.HelloNamespace",
+      "packageId": "Acme.HelloPackage"
+    },
+    "java": {
+      "maven": {
+        "artifactId": "hello-jsii",
+        "groupId": "com.acme.hello"
+      },
+      "package": "com.acme.hello"
+    },
+    "js": {
+      "npm": "cdk-secrets"
+    },
+    "python": {
+      "distName": "acme.hello-jsii",
+      "module": "acme.hello_jsii"
+    }
+  },
+  "types": {
+    "cdk-secrets.AccessKey": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.AccessKey",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.AccessKeyProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/access-key.ts",
+        "line": 76
+      },
+      "name": "AccessKey",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 79
+          },
+          "name": "secretAccessKey",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 78
+          },
+          "name": "smtpPassword",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.AccessKeyProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.AccessKeyProps",
+      "interfaces": [
+        "cdk-secrets.CommonProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/access-key.ts",
+        "line": 12
+      },
+      "name": "AccessKeyProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The path for the credentials in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 22
+          },
+          "name": "parameterPath",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The user name to create the access key for."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 17
+          },
+          "name": "userName",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "The description of the value in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 28
+          },
+          "name": "description",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 'alias/aws/ssm'",
+            "stability": "experimental",
+            "summary": "The KMS key to use to encrypt the value with."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 55
+          },
+          "name": "keyAlias",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- true",
+            "stability": "experimental",
+            "summary": "The secrets as output parameter."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 73
+          },
+          "name": "noEcho",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- false",
+            "stability": "experimental",
+            "summary": "Generate a new secret on update."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 49
+          },
+          "name": "refreshOnUpdate",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 2048",
+            "stability": "experimental",
+            "summary": "Return access id and SMTP password."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 42
+          },
+          "name": "returnPassword",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- false",
+            "stability": "experimental",
+            "summary": "Return access ID and secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 34
+          },
+          "name": "returnSecret",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 1",
+            "stability": "experimental",
+            "summary": "Version to force update."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 61
+          },
+          "name": "serial",
+          "optional": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- Active",
+            "stability": "experimental",
+            "summary": "Status of the key."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/access-key.ts",
+            "line": 67
+          },
+          "name": "status",
+          "optional": true,
+          "type": {
+            "fqn": "cdk-secrets.Status"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.CommonProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.CommonProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/common.ts",
+        "line": 10
+      },
+      "name": "CommonProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "custom": {
+              "attribute": "true"
+            },
+            "stability": "experimental",
+            "summary": "The lambda function providing the functionality."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/common.ts",
+            "line": 15
+          },
+          "name": "provider",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-lambda.IFunction"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "custom": {
+              "attribute": "true"
+            },
+            "stability": "experimental",
+            "summary": "Opaque string to force update."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/common.ts",
+            "line": 21
+          },
+          "name": "version",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.DSAKey": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.DSAKey",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.DSAKeyProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/dsa-key.ts",
+        "line": 43
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 75
+          },
+          "name": "grantRead",
+          "parameters": [
+            {
+              "name": "grantee",
+              "type": {
+                "fqn": "@aws-cdk/aws-iam.IGrantable"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "@aws-cdk/aws-iam.Grant"
+            }
+          }
+        }
+      ],
+      "name": "DSAKey",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 44
+          },
+          "name": "arn",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 47
+          },
+          "name": "hash",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 45
+          },
+          "name": "publicKey",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 46
+          },
+          "name": "publicKeyPEM",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 48
+          },
+          "name": "version",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.DSAKeyProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.DSAKeyProps",
+      "interfaces": [
+        "cdk-secrets.CommonProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/dsa-key.ts",
+        "line": 8
+      },
+      "name": "DSAKeyProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The name of the private key in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 13
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "The description of the key in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 19
+          },
+          "name": "description",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 'alias/aws/ssm'",
+            "stability": "experimental",
+            "summary": "The KMS key to use to encrypt the key with."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 25
+          },
+          "name": "keyAlias",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 2048",
+            "stability": "experimental",
+            "summary": "Number of bits in the key."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 33
+          },
+          "name": "keySize",
+          "optional": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- false",
+            "stability": "experimental",
+            "summary": "Generate a new secret on update."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/dsa-key.ts",
+            "line": 40
+          },
+          "name": "refreshOnUpdate",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.KeyFormat": {
+      "assembly": "cdk-secrets",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.KeyFormat",
+      "kind": "enum",
+      "locationInModule": {
+        "filename": "lib/rsa-key.ts",
+        "line": 9
+      },
+      "members": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "name": "PKCS8"
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "name": "TRADITIONAL_OPEN_SSL"
+        }
+      ],
+      "name": "KeyFormat"
+    },
+    "cdk-secrets.KeyPair": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.KeyPair",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.KeyPairProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/key-pair.ts",
+        "line": 20
+      },
+      "name": "KeyPair",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/key-pair.ts",
+            "line": 21
+          },
+          "name": "arn",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/key-pair.ts",
+            "line": 22
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.KeyPairProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.KeyPairProps",
+      "interfaces": [
+        "cdk-secrets.CommonProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/key-pair.ts",
+        "line": 7
+      },
+      "name": "KeyPairProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The name of the value in the parameters store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/key-pair.ts",
+            "line": 12
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The public key to import."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/key-pair.ts",
+            "line": 17
+          },
+          "name": "publicKeyMaterial",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.Provider": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.Provider",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.ProviderProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/index.ts",
+        "line": 33
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 101
+          },
+          "name": "accessKey",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.AccessKeyProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.AccessKey"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 89
+          },
+          "name": "dsaKey",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.DSAKeyProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.DSAKey"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 97
+          },
+          "name": "keyPair",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.KeyPairProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.KeyPair"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 93
+          },
+          "name": "rsaKey",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.RSAKeyProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.DSAKey"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 105
+          },
+          "name": "secret",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.SecretProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.Secret"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 109
+          },
+          "name": "secretManagerSecret",
+          "parameters": [
+            {
+              "name": "scope",
+              "type": {
+                "fqn": "@aws-cdk/core.Construct"
+              }
+            },
+            {
+              "name": "id",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "props",
+              "type": {
+                "fqn": "cdk-secrets.SecretManagerSecretProps"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "cdk-secrets.SecretManagerSecret"
+            }
+          }
+        }
+      ],
+      "name": "Provider",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 35
+          },
+          "name": "fn",
+          "type": {
+            "fqn": "@aws-cdk/aws-lambda.SingletonFunction"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 34
+          },
+          "name": "key",
+          "type": {
+            "fqn": "@aws-cdk/aws-kms.Key"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.ProviderProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.ProviderProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/index.ts",
+        "line": 24
+      },
+      "name": "ProviderProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- Use code from s3 bucket binxio-public",
+            "stability": "experimental",
+            "summary": "Code for the Provider lambda function."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/index.ts",
+            "line": 30
+          },
+          "name": "code",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-lambda.Code"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.RSAKey": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.RSAKey",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.RSAKeyProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/rsa-key.ts",
+        "line": 25
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 58
+          },
+          "name": "grantRead",
+          "parameters": [
+            {
+              "name": "grantee",
+              "type": {
+                "fqn": "@aws-cdk/aws-iam.IGrantable"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "@aws-cdk/aws-iam.Grant"
+            }
+          }
+        }
+      ],
+      "name": "RSAKey",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 26
+          },
+          "name": "arn",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 29
+          },
+          "name": "hash",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 31
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 27
+          },
+          "name": "publicKey",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 28
+          },
+          "name": "publicKeyPEM",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 30
+          },
+          "name": "version",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.RSAKeyProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.RSAKeyProps",
+      "interfaces": [
+        "cdk-secrets.DSAKeyProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/rsa-key.ts",
+        "line": 14
+      },
+      "name": "RSAKeyProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 2048",
+            "stability": "experimental",
+            "summary": "Encoding type of the private key."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/rsa-key.ts",
+            "line": 22
+          },
+          "name": "keyFormat",
+          "optional": true,
+          "type": {
+            "fqn": "cdk-secrets.KeyFormat"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.Secret": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.Secret",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.SecretProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/secret.ts",
+        "line": 69
+      },
+      "name": "Secret",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 70
+          },
+          "name": "arn",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 72
+          },
+          "name": "hash",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 71
+          },
+          "name": "secret",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 73
+          },
+          "name": "version",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.SecretManagerSecret": {
+      "assembly": "cdk-secrets",
+      "base": "@aws-cdk/core.Construct",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.SecretManagerSecret",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-secrets.SecretManagerSecretProps"
+            }
+          },
+          {
+            "name": "provider",
+            "optional": true,
+            "type": {
+              "fqn": "@aws-cdk/aws-lambda.IFunction"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib/secretmanager-secret.ts",
+        "line": 64
+      },
+      "name": "SecretManagerSecret",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 65
+          },
+          "name": "versionId",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.SecretManagerSecretProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.SecretManagerSecretProps",
+      "interfaces": [
+        "cdk-secrets.CommonProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/secretmanager-secret.ts",
+        "line": 7
+      },
+      "name": "SecretManagerSecretProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The name of the secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 12
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "A unique identifier for the new version to ensure idempotency."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 54
+          },
+          "name": "clientRequestToken",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "The description of the secret in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 18
+          },
+          "name": "description",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 'alias/aws/secretsmanager'",
+            "stability": "experimental",
+            "summary": "The KMS key to use to encrypt the secret with."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 24
+          },
+          "name": "kmsKeyId",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- true",
+            "stability": "experimental",
+            "summary": "The secret as output parameter."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 30
+          },
+          "name": "noEcho",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 30",
+            "stability": "experimental",
+            "summary": "Number of days a deleted secret can be restored."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 48
+          },
+          "name": "recoveryWindowInDays",
+          "optional": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "Base64 encoded secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 36
+          },
+          "name": "secretBinary",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "Secret string or json object or array to be converted to string."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 42
+          },
+          "name": "secretString",
+          "optional": true,
+          "type": {
+            "primitive": "any"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- []",
+            "stability": "experimental",
+            "summary": "Array of tags for the secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secretmanager-secret.ts",
+            "line": 61
+          },
+          "name": "tags",
+          "optional": true,
+          "type": {
+            "primitive": "json"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.SecretProps": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.SecretProps",
+      "interfaces": [
+        "cdk-secrets.CommonProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/secret.ts",
+        "line": 7
+      },
+      "name": "SecretProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "The name of the secret in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 12
+          },
+          "name": "name",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- Defaults to ASCII letters, digits and punctuation characters",
+            "stability": "experimental",
+            "summary": "The alphabet of characters from which to generate a secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 24
+          },
+          "name": "alphabet",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "Plain text secret to be stored."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 66
+          },
+          "name": "content",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "The description of the secret in the parameter store."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 18
+          },
+          "name": "description",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- ''",
+            "stability": "experimental",
+            "summary": "Base64 encoded KMS encoded secret, to be decrypted before stored."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 60
+          },
+          "name": "encryptedContent",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 'alias/aws/ssm'",
+            "stability": "experimental",
+            "summary": "The KMS key to use to encrypt the secret with."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 36
+          },
+          "name": "keyAlias",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- 30",
+            "stability": "experimental",
+            "summary": "The length of the secret."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 30
+          },
+          "name": "length",
+          "optional": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- true",
+            "stability": "experimental",
+            "summary": "Indicates whether output of the return values is replaced by *****."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 54
+          },
+          "name": "noEcho",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- false",
+            "stability": "experimental",
+            "summary": "Generate a new secret on update."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 48
+          },
+          "name": "refreshOnUpdate",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "- false",
+            "stability": "experimental",
+            "summary": "Return the secret as an attribute."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/secret.ts",
+            "line": 42
+          },
+          "name": "returnSecret",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ]
+    },
+    "cdk-secrets.Status": {
+      "assembly": "cdk-secrets",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.Status",
+      "kind": "enum",
+      "locationInModule": {
+        "filename": "lib/access-key.ts",
+        "line": 7
+      },
+      "members": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "name": "ACTIVE"
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "name": "INACTIVE"
+        }
+      ],
+      "name": "Status"
+    },
+    "cdk-secrets.Tag": {
+      "assembly": "cdk-secrets",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "cdk-secrets.Tag",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib/common.ts",
+        "line": 3
+      },
+      "name": "Tag",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/common.ts",
+            "line": 4
+          },
+          "name": "key",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib/common.ts",
+            "line": 5
+          },
+          "name": "value",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    }
+  },
+  "version": "0.1.0",
+  "fingerprint": "P5VVlJtEWv0SHI5GgH6fP660FK8dyQKoVXCnMc/zCM8="
+}
