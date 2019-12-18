@@ -1,0 +1,7 @@
+.git
+.gitignore
+.vscode
+Makefile
+dist
+node_modules
+tsconfig.json

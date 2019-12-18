@@ -565,7 +565,7 @@
   "keywords": [
     "aws",
     "cdk",
-    "constructs",
+    "construct",
     "secrets"
   ],
   "license": "MIT",
@@ -2453,5 +2453,5 @@
     }
   },
   "version": "0.1.0",
-  "fingerprint": "P5VVlJtEWv0SHI5GgH6fP660FK8dyQKoVXCnMc/zCM8="
+  "fingerprint": "1FkCD4WoYQZ8MuMkzis9QWN8J8gpjtwakOwJLxTEJSc="
 }
