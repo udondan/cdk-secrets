@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check contents
+        run: ls -al
+
       - uses: udondan/jsii-publish@master
         with:
           fetch-depth: 1
