@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Where am I
+        run: pwd
+
       - name: Check contents
         run: ls -al
 
