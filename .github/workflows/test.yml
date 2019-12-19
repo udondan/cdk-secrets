@@ -1,0 +1,22 @@
+---
+name: Build packages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: udondan/jsii-publish@master
+        with:
+          fetch-depth: 1
+
+      - name: Check contents
+        run: ls -al
+#- name: Get the version
+#  id: get_version
+#  run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
