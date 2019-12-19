@@ -19,7 +19,7 @@ Package available on:
 - [NuGet]
 - Maven: Coming soon...
 
-   [AWS CDK]: https://aws.amazon.com/de/cdk/
+   [AWS CDK]: https://aws.amazon.com/cdk/
    [JSII]: https://github.com/aws/jsii
    [npm]: https://www.npmjs.com/package/cdk-secrets
    [PyPI]: https://pypi.org/project/cdk-secrets/
