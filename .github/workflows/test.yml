@@ -23,6 +23,6 @@ jobs:
 
       - name: Check contents
         run: ls -al
-#- name: Get the version
+# - name: Get the version
 #  id: get_version
 #  run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
