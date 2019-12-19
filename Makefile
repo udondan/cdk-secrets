@@ -1,3 +1,6 @@
+SHELL := /bin/bash
+VERSION := $(shell cat VERSION)
+
 DOCKER_IMAGE := udondan/jsii-publish
 DOCKER_TAG := 0.5.0
 DOCKER_WORKDIR := /workdir
@@ -20,3 +23,9 @@ build:
 
 package: build
 	@npm run package
+
+tag:
+	@git tag -a "v$(VERSION)" -m 'Creates tag "v$(VERSION)"'
+	@git push --tags
+
+release: tag
