@@ -15,18 +15,10 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Where am I
-        run: pwd
-
-      - name: Check contents
-        run: ls -al
-
       - uses: udondan/jsii-publish@master
         with:
-          fetch-depth: 1
-
-      - name: Check contents
-        run: ls -al
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_PUBLISH: true
 # - name: Get the version
 #  id: get_version
 #  run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}

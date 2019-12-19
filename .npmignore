@@ -1,4 +1,3 @@
-
 # Exclude typescript source and config
 *.ts
 tsconfig.json
@@ -12,3 +11,9 @@ dist
 
 # Include .jsii
 !.jsii
+
+.dockerignore
+.github
+.vscode
+Dockerfile
+Makefile
