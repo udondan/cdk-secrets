@@ -565,6 +565,7 @@
   "keywords": [
     "aws",
     "cdk",
+    "aws-cdk",
     "construct",
     "secrets"
   ],
@@ -2453,5 +2454,5 @@
     }
   },
   "version": "0.2.0",
-  "fingerprint": "4hxmGo1hKt/xxt6j/g8XD+KjLqD/y3R39CKcSsKzFjo="
+  "fingerprint": "QJQ1h7LzjrP5U4ZgjF/L7SppFvh9CO6xKMlNGwNXQJ0="
 }
