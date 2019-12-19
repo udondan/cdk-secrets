@@ -571,6 +571,9 @@
   ],
   "license": "MIT",
   "name": "cdk-secrets",
+  "readme": {
+    "markdown": "# CDK Secrets\n\nWork in progress...\n\nPackage available on:\nnpm: https://www.npmjs.com/package/cdk-secrets\nPyPI: https://pypi.org/project/cdk-secrets/\nNuGet: https://www.nuget.org/packages/CDK.Secrets/\n"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/udondan/cdk-secrets.git"
@@ -578,8 +581,8 @@
   "schema": "jsii/0.10.0",
   "targets": {
     "dotnet": {
-      "namespace": "Acme.HelloNamespace",
-      "packageId": "Acme.HelloPackage"
+      "namespace": "CDK.Secrets",
+      "packageId": "CDK.Secrets"
     },
     "java": {
       "maven": {
@@ -592,8 +595,8 @@
       "npm": "cdk-secrets"
     },
     "python": {
-      "distName": "acme.hello-jsii",
-      "module": "acme.hello_jsii"
+      "distName": "cdk-secrets",
+      "module": "cdk_secrets"
     }
   },
   "types": {
@@ -2453,6 +2456,6 @@
       ]
     }
   },
-  "version": "0.2.0",
-  "fingerprint": "QJQ1h7LzjrP5U4ZgjF/L7SppFvh9CO6xKMlNGwNXQJ0="
+  "version": "0.3.0",
+  "fingerprint": "kTr16p3lueib6rTpzT64Pb8So9jRBpddhwQaC4rC3k8="
 }

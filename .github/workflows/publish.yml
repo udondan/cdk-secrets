@@ -1,0 +1,28 @@
+---
+name: Publish packages
+
+on:
+  create:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - uses: udondan/jsii-publish@master
+        with:
+          BUILD: true
+          VERSION: ${{ steps.get_version.outputs.VERSION }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+          NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}

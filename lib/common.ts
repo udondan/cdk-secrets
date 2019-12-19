@@ -37,17 +37,6 @@ export function makeProperties(o: any) {
         properties[cap(key)] = value; // TODO: we probably do not need the cap
     }
 
-    // WORKS but complains with jsii!
-    //for (let [key, value] of Object.entries(o)) {
-    //    if (key == 'provider') {
-    //        continue;
-    //    }
-    //    const t = typeof value
-    //    if (t != 'string' && t != 'number' && t != 'boolean') {
-    //        value = JSON.stringify(value)
-    //    }
-    //    properties[cap(key)] = value;
-    //}
     return properties;
 }
 

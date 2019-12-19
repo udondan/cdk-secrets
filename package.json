@@ -1,7 +1,7 @@
 {
   "name": "cdk-secrets",
   "description": "CDK Construct for secrets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": {
     "name": "Daniel Schroeder",
@@ -34,19 +34,19 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "acme.hello-jsii",
-        "module": "acme.hello_jsii"
+        "distName": "cdk-secrets",
+        "module": "cdk_secrets"
       },
       "java": {
-        "package": "com.acme.hello",
+        "package": "com.github.udondan",
         "maven": {
-          "groupId": "com.acme.hello",
-          "artifactId": "hello-jsii"
+          "groupId": "com.github.udondan",
+          "artifactId": "cdk-secrets"
         }
       },
       "dotnet": {
-        "namespace": "Acme.HelloNamespace",
-        "packageId": "Acme.HelloPackage"
+        "namespace": "CDK.Secrets",
+        "packageId": "CDK.Secrets"
       }
     }
   },
@@ -63,11 +63,11 @@
     "@aws-cdk/core": "^1.19.0"
   },
   "peerDependencies": {
+    "@aws-cdk/aws-cloudformation": "^1.19.0",
     "@aws-cdk/aws-iam": "^1.19.0",
     "@aws-cdk/aws-kms": "^1.19.0",
     "@aws-cdk/aws-lambda": "^1.19.0",
     "@aws-cdk/aws-s3": "^1.19.0",
-    "@aws-cdk/core": "^1.19.0",
-    "@aws-cdk/aws-cloudformation": "^1.19.0"
+    "@aws-cdk/core": "^1.19.0"
   }
 }
