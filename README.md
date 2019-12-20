@@ -1,5 +1,6 @@
 # CDK Secrets
 
+[![CDK docs](https://img.shields.io/badge/CDK-docs-orange)][docs]
 [![npm version](https://badge.fury.io/js/cdk-secrets.svg)][npm]
 [![PyPI version](https://badge.fury.io/py/cdk-secrets.svg)][PyPI]
 [![NuGet version](https://badge.fury.io/nu/CDK.Secrets.svg)][NuGet]
@@ -24,3 +25,4 @@ Package available on:
    [npm]: https://www.npmjs.com/package/cdk-secrets
    [PyPI]: https://pypi.org/project/cdk-secrets/
    [NuGet]: https://www.nuget.org/packages/CDK.Secrets/
+   [docs]: https://awscdk.io/packages/cdk-secrets@0.4.0
