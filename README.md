@@ -4,6 +4,7 @@
 [![npm version](https://badge.fury.io/js/cdk-secrets.svg)][npm]
 [![PyPI version](https://badge.fury.io/py/cdk-secrets.svg)][PyPI]
 [![NuGet version](https://badge.fury.io/nu/CDK.Secrets.svg)][NuGet]
+[![GitHub](https://img.shields.io/github/license/udondan/cdk-secrets)][license]
 
 > **WORK IN PROGRESS**
 >
@@ -26,3 +27,4 @@ Package available on:
    [PyPI]: https://pypi.org/project/cdk-secrets/
    [NuGet]: https://www.nuget.org/packages/CDK.Secrets/
    [docs]: https://awscdk.io/packages/cdk-secrets@0.4.0
+   [license]: https://github.com/udondan/cdk-secrets/blob/master/LICENSE
