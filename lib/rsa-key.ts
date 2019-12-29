@@ -43,7 +43,7 @@ export class RSAKey extends cdk.Construct {
 
         const key = new cfn.CustomResource(this, 'RSAKey', {
             provider: cfn.CustomResourceProvider.fromLambda(provider),
-            resourceType: 'Custom::RSAKey',
+            resourceType: 'Custom::RSAKeyTest',
             properties: common.makeProperties(props),
         });
 
