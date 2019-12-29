@@ -2,9 +2,9 @@
 name: Publish packages
 
 on:
-  create:
+  push:
     branches:
-      - refs/tags/@udondan/v*
+      - refs/tags/v*
 
 jobs:
   build:
