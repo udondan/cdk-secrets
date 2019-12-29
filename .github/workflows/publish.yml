@@ -3,9 +3,8 @@ name: Publish packages
 
 on:
   create:
-    tags:
-      - v*
-    branches: []
+    branches:
+      - refs/tags/@udondan/v*
 
 jobs:
   build:
