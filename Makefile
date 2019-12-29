@@ -50,6 +50,18 @@ maven:
 		${DOCKER_IMAGE}:${DOCKER_TAG}
 
 
+
+
+
+test: build
+	npm run test
+
+test-update:
+	npm run test -- -u
+
+
+
+
 tag:
 	@git tag -a "v$(VERSION)" -m 'Creates tag "v$(VERSION)"'
 	@git push --tags

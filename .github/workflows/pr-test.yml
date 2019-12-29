@@ -1,0 +1,25 @@
+---
+name: Testing CFN output
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Build source
+        uses: udondan/jsii-publish@master
+        with:
+          BUILD: true
+
+      - name: Run Jest
+        uses: stefanoeb/jest-action@1.0.2

@@ -28,7 +28,8 @@
   "scripts": {
     "build": "jsii",
     "build:watch": "jsii -w",
-    "package": "jsii-pacmak"
+    "package": "jsii-pacmak",
+    "test": "jest"
   },
   "jsii": {
     "outdir": "dist",
@@ -38,9 +39,9 @@
         "module": "cdk_secrets"
       },
       "java": {
-        "package": "com.github.udondan",
+        "package": "com.udondan.cdkSecrets",
         "maven": {
-          "groupId": "com.github.udondan",
+          "groupId": "com.udondan",
           "artifactId": "cdk-secrets"
         }
       },
@@ -50,7 +51,15 @@
       }
     }
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
   "devDependencies": {
+    "@aws-cdk/assert": "^1.19.0",
+    "@types/jest": "^24.0.24",
+    "jest": "^24.9.0",
     "jsii": "^0.20.11",
     "jsii-pacmak": "^0.20.11"
   },

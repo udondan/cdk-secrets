@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create key pair based on RSA private key 1`] = `
+Object {
+  "Resources": Object {
+    "KeyPair0151ACB6": Object {
+      "DeletionPolicy": "Delete",
+      "Properties": Object {
+        "Name": "KeyPair",
+        "PublicKeyMaterial": Object {
+          "Fn::GetAtt": Array [
+            "PrivateKeyRSAKey9F69240A",
+            "PublicKey",
+          ],
+        },
+        "ServiceToken": Object {
+          "Fn::GetAtt": Array [
+            "SingletonLambda2328c71905b8494584c182c4142f099777890506",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::KeyPair",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "PrivateKeyRSAKey9F69240A": Object {
+      "DeletionPolicy": "Delete",
+      "DependsOn": Array [
+        "TestKeyAlias90FC0DD1",
+        "TestKey4CACAF33",
+      ],
+      "Properties": Object {
+        "KeyAlias": "alias/test/key",
+        "Name": "PrivateKey",
+        "ServiceToken": Object {
+          "Fn::GetAtt": Array [
+            "SingletonLambda2328c71905b8494584c182c4142f099777890506",
+            "Arn",
+          ],
+        },
+        "Version": "v1",
+      },
+      "Type": "Custom::RSAKey",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "SecretProviderKey4BC4F616": Object {
+      "DeletionPolicy": "Retain",
+      "Properties": Object {
+        "Description": "Used for encryption of secrets in CloudFormation templates",
+        "EnableKeyRotation": true,
+        "KeyPolicy": Object {
+          "Statement": Array [
+            Object {
+              "Action": Array [
+                "kms:Create*",
+                "kms:Describe*",
+                "kms:Enable*",
+                "kms:List*",
+                "kms:Put*",
+                "kms:Update*",
+                "kms:Revoke*",
+                "kms:Disable*",
+                "kms:Get*",
+                "kms:Delete*",
+                "kms:ScheduleKeyDeletion",
+                "kms:CancelKeyDeletion",
+                "kms:GenerateDataKey",
+              ],
+              "Effect": "Allow",
+              "Principal": Object {
+                "AWS": Object {
+                  "Fn::Join": Array [
+                    "",
+                    Array [
+                      "arn:",
+                      Object {
+                        "Ref": "AWS::Partition",
+                      },
+                      ":iam::",
+                      Object {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":root",
+                    ],
+                  ],
+                },
+              },
+              "Resource": "*",
+            },
+            Object {
+              "Action": Array [
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+              ],
+              "Effect": "Allow",
+              "Principal": Object {
+                "AWS": Object {
+                  "Fn::GetAtt": Array [
+                    "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+                    "Arn",
+                  ],
+                },
+              },
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::KMS::Key",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "SecretProviderKeyAlias389CD818": Object {
+      "Properties": Object {
+        "AliasName": "alias/cmk/cfn-secrets",
+        "TargetKeyId": Object {
+          "Fn::GetAtt": Array [
+            "SecretProviderKey4BC4F616",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::KMS::Alias",
+    },
+    "SecretProviderPolicy9420F187": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": Array [
+                "iam:CreateAccessKey",
+                "iam:DeleteAccessKey",
+                "iam:UpdateAccessKey",
+                "ssm:PutParameter",
+                "ssm:GetParameter",
+                "ssm:DeleteParameter",
+                "ec2:ImportKeyPair",
+                "ec2:DeleteKeyPair",
+                "secretsmanager:DeleteSecret",
+                "secretsmanager:CreateSecret",
+                "secretsmanager:UpdateSecret",
+              ],
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+            Object {
+              "Action": "logs:*",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "SecretProviderPolicy9420F187",
+        "Roles": Array [
+          Object {
+            "Ref": "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "SingletonLambda2328c71905b8494584c182c4142f099777890506": Object {
+      "DependsOn": Array [
+        "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRoleDefaultPolicy29142A48",
+        "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+      ],
+      "Properties": Object {
+        "Code": Object {
+          "S3Bucket": "binxio-public",
+          "S3Key": "lambdas/cfn-secret-provider-1.0.0.zip",
+        },
+        "Description": "CloudFormation Custom:Secret implementation",
+        "Handler": "secrets.handler",
+        "Role": Object {
+          "Fn::GetAtt": Array [
+            "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+            "Arn",
+          ],
+        },
+        "Runtime": "python3.7",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": Object {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRoleDefaultPolicy29142A48": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": Array [
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+              ],
+              "Effect": "Allow",
+              "Resource": Object {
+                "Fn::GetAtt": Array [
+                  "SecretProviderKey4BC4F616",
+                  "Arn",
+                ],
+              },
+            },
+            Object {
+              "Action": Array [
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+              ],
+              "Effect": "Allow",
+              "Resource": Object {
+                "Fn::GetAtt": Array [
+                  "TestKey4CACAF33",
+                  "Arn",
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRoleDefaultPolicy29142A48",
+        "Roles": Array [
+          Object {
+            "Ref": "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "TestKey4CACAF33": Object {
+      "DeletionPolicy": "Retain",
+      "Properties": Object {
+        "Description": "Key to encrypt all secrets with",
+        "EnableKeyRotation": false,
+        "KeyPolicy": Object {
+          "Statement": Array [
+            Object {
+              "Action": Array [
+                "kms:Create*",
+                "kms:Describe*",
+                "kms:Enable*",
+                "kms:List*",
+                "kms:Put*",
+                "kms:Update*",
+                "kms:Revoke*",
+                "kms:Disable*",
+                "kms:Get*",
+                "kms:Delete*",
+                "kms:ScheduleKeyDeletion",
+                "kms:CancelKeyDeletion",
+                "kms:GenerateDataKey",
+              ],
+              "Effect": "Allow",
+              "Principal": Object {
+                "AWS": Object {
+                  "Fn::Join": Array [
+                    "",
+                    Array [
+                      "arn:",
+                      Object {
+                        "Ref": "AWS::Partition",
+                      },
+                      ":iam::",
+                      Object {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":root",
+                    ],
+                  ],
+                },
+              },
+              "Resource": "*",
+            },
+            Object {
+              "Action": Array [
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+              ],
+              "Effect": "Allow",
+              "Principal": Object {
+                "AWS": Object {
+                  "Fn::GetAtt": Array [
+                    "SingletonLambda2328c71905b8494584c182c4142f0997ServiceRole2EE18092",
+                    "Arn",
+                  ],
+                },
+              },
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::KMS::Key",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "TestKeyAlias90FC0DD1": Object {
+      "Properties": Object {
+        "AliasName": "alias/test/key",
+        "TargetKeyId": Object {
+          "Fn::GetAtt": Array [
+            "TestKey4CACAF33",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::KMS::Alias",
+    },
+  },
+}
+`;
