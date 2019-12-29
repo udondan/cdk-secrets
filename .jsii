@@ -572,7 +572,7 @@
   "license": "MIT",
   "name": "cdk-secrets",
   "readme": {
-    "markdown": "# CDK Secrets\n\nWork in progress...\n\nPackage available on:\nnpm: https://www.npmjs.com/package/cdk-secrets\nPyPI: https://pypi.org/project/cdk-secrets/\nNuGet: https://www.nuget.org/packages/CDK.Secrets/\n"
+    "markdown": "# CDK Secrets\n\n[![CDK docs](https://img.shields.io/badge/CDK-docs-orange)][docs]\n[![npm version](https://badge.fury.io/js/cdk-secrets.svg)][npm]\n[![PyPI version](https://badge.fury.io/py/cdk-secrets.svg)][PyPI]\n[![NuGet version](https://badge.fury.io/nu/CDK.Secrets.svg)][NuGet]\n[![GitHub](https://img.shields.io/github/license/udondan/cdk-secrets)][license]\n\n> **WORK IN PROGRESS**\n>\n> While this is generally working, it is not ready for production.\n\n[AWS CDK] construct to manage secrets. It makes use of a custom resource provider from [binxio/cfn-secret-provider](https://github.com/binxio/cfn-secret-provider).\n\nThis package is written in TypeScript and cross-compiled via [JSII] to all other languages supported by CDK.\n\nPackage available on:\n\n- [npm]\n- [PyPI]\n- [NuGet]\n- Maven: Coming soon...\n\n   [AWS CDK]: https://aws.amazon.com/cdk/\n   [JSII]: https://github.com/aws/jsii\n   [npm]: https://www.npmjs.com/package/cdk-secrets\n   [PyPI]: https://pypi.org/project/cdk-secrets/\n   [NuGet]: https://www.nuget.org/packages/CDK.Secrets/\n   [docs]: https://awscdk.io/packages/cdk-secrets@0.4.0\n   [license]: https://github.com/udondan/cdk-secrets/blob/master/LICENSE\n"
   },
   "repository": {
     "type": "git",
@@ -586,10 +586,10 @@
     },
     "java": {
       "maven": {
-        "artifactId": "hello-jsii",
-        "groupId": "com.acme.hello"
+        "artifactId": "cdk-secrets",
+        "groupId": "com.udondan"
       },
-      "package": "com.acme.hello"
+      "package": "com.udondan.cdkSecrets"
     },
     "js": {
       "npm": "cdk-secrets"
@@ -1505,7 +1505,7 @@
           ],
           "returns": {
             "type": {
-              "fqn": "cdk-secrets.DSAKey"
+              "fqn": "cdk-secrets.RSAKey"
             }
           }
         },
@@ -2457,5 +2457,5 @@
     }
   },
   "version": "0.3.0",
-  "fingerprint": "kTr16p3lueib6rTpzT64Pb8So9jRBpddhwQaC4rC3k8="
+  "fingerprint": "AZG8C7cRexn8J7VTJTgeKfs9g2eq1DrDDkTZBqzy0xw="
 }

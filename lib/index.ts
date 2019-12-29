@@ -91,7 +91,7 @@ export class Provider extends cdk.Construct {
     }
 
     rsaKey(scope: cdk.Construct, id: string, props: rsaKey.RSAKeyProps) {
-        return new dsaKey.DSAKey(scope, id, props, this.fn);
+        return new rsaKey.RSAKey(scope, id, props, this.fn);
     }
 
     keyPair(scope: cdk.Construct, id: string, props: keyPair.KeyPairProps) {
