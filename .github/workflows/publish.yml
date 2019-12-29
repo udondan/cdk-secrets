@@ -5,6 +5,7 @@ on:
   create:
     tags:
       - v*
+    branches: []
 
 jobs:
   build:
