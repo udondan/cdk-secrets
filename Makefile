@@ -2,7 +2,7 @@ SHELL := /bin/bash
 VERSION := $(shell cat VERSION)
 
 DOCKER_IMAGE := udondan/jsii-publish
-DOCKER_TAG := 0.5.0
+DOCKER_TAG := 0.6.0
 DOCKER_WORKDIR := /workdir
 
 PWD := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
@@ -43,10 +43,8 @@ maven:
 	docker run -it \
 		--workdir ${DOCKER_WORKDIR} \
 		--volume ${PWD}:${DOCKER_WORKDIR} \
-		--env GPG_PRIVATE_KEY \
-		--env SONATYPE_NEXUS_USERNAME=udondan \
-		--env SONATYPE_STAGING_PROFILE=com.udondan \
-		--env SONATYPE_NEXUS_PASSWORD \
+		--env GITHUB_TOKEN \
+		--env GITHUB_REPOSITORY=udondan/cdk-secrets \
 		${DOCKER_IMAGE}:${DOCKER_TAG}
 
 
