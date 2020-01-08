@@ -2,7 +2,7 @@ SHELL := /bin/bash
 VERSION := $(shell cat VERSION)
 
 DOCKER_IMAGE := udondan/jsii-publish
-DOCKER_TAG := 0.6.0
+DOCKER_TAG := 0.6.1
 DOCKER_WORKDIR := /workdir
 
 PWD := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
