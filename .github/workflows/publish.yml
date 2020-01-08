@@ -50,4 +50,4 @@ jobs:
         uses: udondan/jsii-publish@v0.6.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
