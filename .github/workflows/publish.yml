@@ -15,14 +15,39 @@ jobs:
         id: get_version
         run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
 
-      - uses: actions/checkout@v1
+      - name: Checkout code
+        uses: actions/checkout@v1
         with:
           fetch-depth: 1
 
-      - uses: udondan/jsii-publish@master
+      - name: Build source
+        uses: &jsii-publish udondan/jsii-publish@v0.6.0
         with:
-          BUILD: true
           VERSION: ${{ steps.get_version.outputs.VERSION }}
+          BUILD_SOURCE: true
+
+      - name: Build packages
+        uses: *jsii-publish
+        with:
+          BUILD_PACKAGES: true
+
+      - name: Publish to npm
+        uses: *jsii-publish
+        with:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to PyPI
+        uses: *jsii-publish
+        with:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+
+      - name: Publish to NuGet
+        uses: *jsii-publish
+        with:
           NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
+
+      - name: Publish to Maven GitHub
+        uses: *jsii-publish
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}

@@ -17,9 +17,9 @@ jobs:
           fetch-depth: 1
 
       - name: Build source
-        uses: udondan/jsii-publish@master
+        uses: udondan/jsii-publish@v0.6.0
         with:
-          BUILD: true
+          BUILD_SOURCE: true
 
       - name: Run Jest
         uses: stefanoeb/jest-action@1.0.2
