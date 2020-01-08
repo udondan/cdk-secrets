@@ -14,8 +14,9 @@ docker-build:
 	docker run -it \
 		--workdir ${DOCKER_WORKDIR} \
 		--volume ${PWD}:${DOCKER_WORKDIR} \
-		--env VERSION=0.3.0 \
-		--env BUILD=true \
+		--env VERSION=${VERSION} \
+		--env BUILD_SOURCE=true \
+		--env BUILD_PACKAGES=true \
 		${DOCKER_IMAGE}:${DOCKER_TAG}
 
 npm:
