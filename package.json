@@ -1,7 +1,7 @@
 {
   "name": "cdk-secrets",
   "description": "CDK Construct for secrets",
-  "version": "0.0.0",
+  "version": "0.4.2",
   "license": "MIT",
   "author": {
     "name": "Daniel Schroeder",
