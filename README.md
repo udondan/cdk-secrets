@@ -23,11 +23,7 @@ The secret provider can create RSA keys, DSA keys, EC2 key-pairs, IAM user passw
 
 All this functionality is provided by the [binxio/cfn-secret-provider] custom resource.
 
-## Examples
-
-There is an example application in [./example](https://github.com/udondan/cdk-secrets/blob/master/example) showing how to create a new EC2 key pair.
-
-When it comes to security, you should not trust anyone. By default the secret provider uses the the lambda function stored `s3://binxio-public-${AWS_REGION}/lambdas/cfn-secret-provider-1.0.0.zip`. You might want to download this file, review its contents and store it in your own bucket or along with your code. You then can create the lambda function from that zip file instead lie so:
+When it comes to security, you should not trust anyone. By default the secret provider uses the lambda function stored at `s3://binxio-public-${AWS_REGION}/lambdas/cfn-secret-provider-1.0.0.zip`. You might want to download this file, review its contents and store it in your own bucket or along with your code. You then can create the lambda function from that zip file instead like so:
 
 ```ts
 const code = lambda.Code.fromAsset(path.join(__dirname, '../cfn-secret-provider-1.0.0.zip'));
@@ -36,6 +32,10 @@ const secretProvider = new secret.Provider(this, 'SecretProvider', {
    code: code,
 });
 ```
+
+## Examples
+
+There is an example application in [./example](https://github.com/udondan/cdk-secrets/blob/master/example) showing how to create a new EC2 key pair.
 
    [AWS CDK]: https://aws.amazon.com/cdk/
    [JSII]: https://github.com/aws/jsii
