@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 1
 
       - name: Build source
-        uses: udondan/jsii-publish@v0.6.2
+        uses: udondan/jsii-publish@v0.6.3
         with:
           BUILD_SOURCE: true
 
