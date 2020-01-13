@@ -2,7 +2,7 @@ SHELL := /bin/bash
 VERSION := $(shell cat VERSION)
 
 DOCKER_IMAGE := udondan/jsii-publish
-DOCKER_TAG := 0.6.4
+DOCKER_TAG := 0.8.2
 DOCKER_WORKDIR := /workdir
 
 PWD := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
@@ -46,7 +46,6 @@ maven:
 		--volume ${PWD}:${DOCKER_WORKDIR} \
 		--env GITHUB_TOKEN \
 		--env GITHUB_REPOSITORY=udondan/cdk-secrets \
-		--env DEBUG=true \
 		${DOCKER_IMAGE}:${DOCKER_TAG}
 
 
