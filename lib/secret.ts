@@ -1,4 +1,5 @@
 import cfn = require('@aws-cdk/aws-cloudformation');
+import iam = require('@aws-cdk/aws-iam');
 import lambda = require('@aws-cdk/aws-lambda');
 import cdk = require('@aws-cdk/core');
 
@@ -93,5 +94,15 @@ export class Secret extends cdk.Construct {
     this.secret = key.getAttString('Secret');
     this.hash = key.getAttString('Hash');
     this.version = key.getAttString('Version');
+  }
+
+  grantRead(grantee: iam.IGrantable) {
+    const result = iam.Grant.addToPrincipal({
+      grantee,
+      actions: ['ssm:GetParameter'],
+      resourceArns: [this.arn],
+      scope: this
+    });
+    return result;
   }
 }
