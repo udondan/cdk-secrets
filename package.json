@@ -5,7 +5,11 @@
   "license": "MIT",
   "author": {
     "name": "Daniel Schroeder",
-    "url": "https://www.udondan.com/"
+    "url": "https://www.udondan.com/",
+    "twitter": "udondan"
+  },
+  "awscdkio": {
+    "twitter": "udondan"
   },
   "homepage": "https://github.com/udondan/cdk-secrets",
   "repository": {
