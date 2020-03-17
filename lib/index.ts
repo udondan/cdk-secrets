@@ -11,7 +11,6 @@ import rsaKey = require('./rsa-key');
 import secret = require('./secret');
 import secretManagerSecret = require('./secretmanager-secret');
 
-
 export * from './access-key';
 export * from './dsa-key';
 export * from './rsa-key';
@@ -19,7 +18,6 @@ export * from './key-pair';
 export * from './secret';
 export * from './secretmanager-secret';
 export * from './common';
-
 
 export interface ProviderProps {
     /**
@@ -40,7 +38,7 @@ export class Provider extends cdk.Construct {
             enableKeyRotation: true,
             description: 'Used for encryption of secrets in CloudFormation templates',
             alias: 'alias/cmk/cfn-secrets',
-
+            removalPolicy: cdk.RemovalPolicy.DESTROY
         });
 
         let code = props.code;
