@@ -42,13 +42,6 @@
         "distName": "cdk-secrets",
         "module": "cdk_secrets"
       },
-      "java": {
-        "package": "com.udondan.cdkSecrets",
-        "maven": {
-          "groupId": "com.udondan",
-          "artifactId": "cdk-secrets"
-        }
-      },
       "dotnet": {
         "namespace": "CDK.Secrets",
         "packageId": "CDK.Secrets"
