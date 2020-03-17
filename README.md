@@ -1,14 +1,14 @@
-# CDK Secrets
+# DEPRECATED - CDK Secrets
+
+This project is **deprecated**. The original goal of this construct was to provide an API for creating EC2 Key Pairs. The custom resource provider I used had much more functionality. It turned out this additional functionality was never needed and creating EC2 Key Pairs was overly complicated.
+
+To create EC2 Key Pairs you now can use my new construct: **[cdk-ec2-key-pair](https://github.com/udondan/cdk-ec2-key-pair)**
 
 [![CDK docs](https://img.shields.io/badge/CDK-docs-orange)][docs]
 [![npm version](https://badge.fury.io/js/cdk-secrets.svg)][npm]
 [![PyPI version](https://badge.fury.io/py/cdk-secrets.svg)][PyPI]
 [![NuGet version](https://badge.fury.io/nu/CDK.Secrets.svg)][NuGet]
 [![GitHub](https://img.shields.io/github/license/udondan/cdk-secrets)][license]
-
-> **WORK IN PROGRESS**
->
-> While this is generally working, it is not ready for production.
 
 [AWS CDK] construct to manage secrets. It makes use of a custom resource provider from [binxio/cfn-secret-provider].
 
